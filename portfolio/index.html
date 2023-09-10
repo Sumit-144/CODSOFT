@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            Sumit Jaiswar
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#experience">Experience</a></li> -->
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- For hamburger  -->
+    <nav id="hamburger-nav">
+        <div class="logo">
+            John Doe
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <!-- <li><a href="#experience" onclick="togglemenu()">Experience</a></li> -->
+                <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                <li><a href="#contacts" onclick="togglemenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic_container">
+            <img src="profile-pic.jpg" alt="My image">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Sumit Jaiswar</h1>
+            <p class="section_text_p2">Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('MernDevAug.pdf')">Download CV</button>
+                <!-- Remove dot slash for any problem in contact info here -->
+                <button class="btn btn-color-1" onclick="location.href = './#contacts'">Contact Info</button>
+            </div>
+            <!-- https://www.linkedin.com/in/sumit-jaiswal-baa71a135 -->
+            <div id="socials-container">
+                <img src="linkedin.png" alt="my linkedIn profile" class="icon"
+                    onclick="location.href = 'https://www.linkedin.com/in/sumit-jaiswal-baa71a135'">
+                <img src="github.png" alt="my github profile" class="icon"
+                    onclick="location.href = 'https://github.com/Sumit-144'">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section_text_p1">Get to Know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic_container">
+                <img src="profile-pic.jpg" alt="Profile pic" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="experience.png" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>1 month <br>Web Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="education.png" alt="education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.E Electrical</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    I am an Electrical Engineer. However I was always passionate about web development. I trained myself in few relevant technologies or tools required to develop a decent functional website. I got an opportunity to work for CODSOFT as web developer Intern wherein I implemented my skills to achieve various tasks.
+                </div>
+            </div>
+        </div>
+        <img src="arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href = './#projects'">
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="project-1.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Calculator</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href = 'https://github.com/Sumit-144/CODSOFT/tree/2bc298452036e778675876740bbe215a916aae49/calculator'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://github.com/'">Live
+                            Demo</button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="project-2.jpg" alt="Project 2" class="project-img test">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Landing Page</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href = 'https://github.com/Sumit-144/CODSOFT/tree/2bc298452036e778675876740bbe215a916aae49/landingPage'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://github.com/'">Live
+                            Demo</button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="project-3.webp" alt="Project 3" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Portfolio</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href = 'https://github.com/'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://github.com/'">Live
+                            Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href = './#contacts'">
+    </section>
+
+    <!-- Contact -->
+    <section id="contacts">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/sumit-jaiswal-baa71a135">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#experience">Experience</a></li> -->
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &copy; 2023 Sumit Jaiswar. All rights reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
