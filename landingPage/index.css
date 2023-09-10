@@ -1,0 +1,162 @@
+/* To eliminate preset margin and padding */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.header{
+    width: 100%;
+    height: 105vh;
+    background: linear-gradient( rgba(0,0,0,0.8),rgba(0,0,0,0.2)) ,url('main.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+    background-blend-mode: darken;
+}
+.footer-container{
+    display: flex;
+    align-content: baseline;
+    /* margin: 580px; */
+    /* max-width: 530%; */
+    flex-direction: column;
+    margin-top: 568px;
+    /* border: 2px solid red; */
+    height: 75px;
+    background-attachment: inherit;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+
+}
+
+.footer-text{
+    
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin: 0px -50px;
+    /* Apply a black shadow with a slight blur */
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 8.5);
+    color: rgb(210, 90, 34);
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.register a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    background:sienna;
+    border-radius: 8px;
+}
+.header-text{
+    /*max-width: 650px;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* margin-right: -50%; */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.header-text div{
+    font-size: 3.5em;
+    padding: 13px 0px;
+}
+
+.header-text a{
+    text-decoration: none;
+    background: sienna;
+    padding: 10px 18px;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+
+/* for modal */
+/* Styles for the modal container */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+}
+
+/* Styles for the modal content */
+.modal-content {
+    background-color:rgb(111, 60, 21);
+    /* background-color: sienna; */
+    width: 600px;
+    margin: 16% auto; /* Center the modal vertically */
+    padding: 20px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+/* Styles for the close button */
+.close {
+    position: absolute;
+    top: 215px;
+    right: 450px;
+    cursor: pointer;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+.signupBtn{
+    border: 2px solid grey;
+    width: 5em;
+    height: 2em;
+    font-size: 13px;
+    border-radius: 15px;
+}
+.field  {
+    width: 250px;
+    border-radius: 12px;
+    /* margin: 28px; */
+    padding: 3px;
+    font-family: inherit;
+}
+
+/*
+media query at 910 * 710px
+*/
+@media only screen and (max-width : 910px){
+    .burger{
+        display: block;
+    }
+    nav{
+        display: flex;
+        height: 470px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+}

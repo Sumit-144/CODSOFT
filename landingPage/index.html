@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">PumpingHouse</div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#" id="bmiAnchor">My BMI ? </a>
+                <a href="#" id="contactAnchor">Contact us</a>
+            </div>
+            <div class="register">
+                <a href="#" id="loginAnchor">Signup</a>
+            </div>
+
+
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+        <section class="header-text background">
+            <div>Hustle for the Muscle</div>
+            <!-- <p style="font-size: 18px;">Book a Free Session Now</p><br> -->
+            <a href="#" id="book">Book a free session now!</a>
+        </section>
+        <footer class="footer-container footer-text">
+            <p>
+                Copyright &copy; 2022 - All rights reserved.
+            </p>
+        </footer>
+    </header>
+
+    <!-- This is login modal form -->
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal1">&times;</span>
+            <!-- <h3 >Signup</h3> -->
+            <br>
+            <form>
+                <!-- Login form fields go here -->
+                <input type="email" placeholder="Email" class="field"><br><br>
+
+                <input type="password" placeholder="Password" class="field"><br><br>
+                <input type="password" placeholder="Confirm Password" class="field"><br><br>
+                <button type="submit" class="signupBtn">Signup</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- This is contact us modal -->
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal2">&times;</span>
+            <!-- <h3 >Signup</h3> -->
+            <br>
+            <form>
+                <!-- Login form fields go here -->
+                <input type="email" placeholder="Email" class="field"><br><br>
+
+                <textarea name="anything" id="comments" cols="30" rows="10" class="field"
+                    placeholder="Your Query"></textarea><br><br>
+
+                <button type="submit" class="signupBtn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- This is bmi modal -->
+
+    <div id="myModal3" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal3">&times;</span>
+            <!-- <h3 >Signup</h3> -->
+            <br>
+            <form>
+                <input type="number" placeholder="Enter your weight in kilogram" id="weight" class="field"><br><br>
+                <input type="number" placeholder="Enter your height in metre" id="height" class="field"><br><br>
+                <button type="submit" class="signupBtn">Find BMI</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- This is booking session modal -->
+
+    <div id="myModal4" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal4">&times;</span>
+            <!-- <h3 >Signup</h3> -->
+            <br>
+            <form>
+                <h2>We will contact you, once you submit details!</h2><br>
+                <input type="text" placeholder="Enter your full name" class="field" id="name"><br><br>
+                <input type="email" placeholder="Enter your mail id" class="field" id="email"><br><br>
+                
+                <button type="submit" class="signupBtn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
